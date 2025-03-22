@@ -10,7 +10,7 @@ import "lightgallery/scss/lightgallery.scss";
 import "lightgallery/scss/lg-zoom.scss";
 
 // import plugins if you need
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import wrk1 from "../assets/wrk1.jpeg";
 import wrk2 from "../assets/wrk2.jpeg";
@@ -27,6 +27,9 @@ import wrk12 from "../assets/wrk12.jpeg";
 import Footer from "./Footer";
 
 function Gallery() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // const images = [
   //   { src: wrk1, width: 300, height: 300 },
   //   { src: wrk2, width: 300, height: 300 },
