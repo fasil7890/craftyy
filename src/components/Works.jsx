@@ -2,8 +2,10 @@ import { Box, Button, Divider, Grid2, Stack, Typography } from "@mui/material";
 import React from "react";
 import wrk1 from "../assets/wrk11.jpeg";
 import wrk2 from "../assets/wrk12.jpeg";
+import { useNavigate } from "react-router-dom";
 
 function Works() {
+  const naviagte = useNavigate();
   const images = [wrk1, wrk2];
   return (
     <div>
@@ -49,6 +51,7 @@ function Works() {
         </Grid2>
         <Stack mt={3} alignItems={"center"}>
           <Button
+            onClick={() => naviagte("/gallery")}
             sx={{
               backgroundColor: "lightgray",
               width: "250px",
