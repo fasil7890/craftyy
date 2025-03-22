@@ -1,5 +1,15 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
+.active-link {
+  color: #333300;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.inactive-link {
+  color: #333300;
+  text-decoration: none;
+}

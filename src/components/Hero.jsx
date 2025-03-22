@@ -9,20 +9,19 @@ function Hero() {
         <Grid2 size={{ xs: 12, md: 6 }}>
           <Box
             p={3}
-          
             height={"100%"}
             sx={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              flexDirection:'column'
+              flexDirection: "column",
             }}
           >
             <Box mb={2}>
-              <Typography fontWeight={"bold"} textAlign={"center"} variant="h3">
+              <Typography fontWeight={"bold"} textAlign={"center"} color="#333300" variant="h3">
                 Handmade with Love
               </Typography>
-              <Typography fontWeight={"bold"} textAlign={"center"} variant="h3">
+              <Typography fontWeight={"bold"} textAlign={"center"} color="#333300" variant="h3">
                 Start Crafting Today!
               </Typography>
             </Box>
@@ -32,6 +31,7 @@ function Hero() {
                 fontFamily={"cursive"}
                 textAlign={"center"}
                 variant="h5"
+                
               >
                 Preserve your precious memories in style with our elegant frame
                 albums. Perfect for showcasing your favorite moments, they blend
@@ -41,7 +41,11 @@ function Hero() {
           </Box>
         </Grid2>
         <Grid2 size={{ xs: 12, md: 6 }}>
-          <Box height={"500px"} width={"500px"} p={3}>
+          <Box
+            sx={{ width: { xs: "90vw", md: "500px" } }}
+            height={"500px"}
+           
+          >
             <img
               height={"100%"}
               width={"100%"}
